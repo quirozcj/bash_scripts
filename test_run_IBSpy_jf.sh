@@ -18,7 +18,7 @@ function log_line() {
 	echo $(date) "$1" >&2
 }
 
-# symlink to chinesea
+# symlink to spelta genome
 # ln -s /jic/research-groups/Cristobal-Uauy/assemblies/releasePGSBv2.0/genome/spelta.genome.fa \
 
 declare -a references=("arinaLrFor" "chinesespring" "jagger" "julius" "lancer" "landmark" "mace" "norin61" "stanley" "symattis" "spelta.genome" "svevo")
