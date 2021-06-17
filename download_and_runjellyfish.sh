@@ -11,10 +11,8 @@
 #SBATCH -e /jic/scratch/groups/Cristobal-Uauy/quirozj/14_cold_storage/log/jf.%N.%j.err # STDERR
 
 ##   SBATCH --array=1- 8 24
-source package /nbi/software/testing/bin/python-3.7.2 
-source package /nbi/software/production/bin/dtool-3.12.0
-# source /common/software/linuxbrew/Cellar/lmod/5.9.3/lmod/5.9.3/init/bash
-# module use /common/modulefiles/Core
+source /common/software/linuxbrew/Cellar/lmod/5.9.3/lmod/5.9.3/init/bash
+module use /common/modulefiles/Core
 module load dtool
 
 #this is the SSD folder. We requested 100 GB with --localscratch==ssd:100
